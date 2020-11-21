@@ -27,5 +27,5 @@ steps:
     location: 'East US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/azuredeploy.json'
-    overrideParameters: 'https://raw.githubusercontent.com/Justin-Ngai/AzureRmPipeline-repo/master/CreateWebApp/linkedStorageAccount.json'
+    overrideParameters: '-projectName ARM -linkedTemplateUri https://raw.githubusercontent.com/Justin-Ngai/AzureRmPipeline-repo/master/CreateWebApp/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
